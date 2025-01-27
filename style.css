@@ -1,0 +1,199 @@
+/* Global layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #f0f8ff;
+}
+
+#app {
+  width: 95%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Logotyp */
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.logo-header {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Startskärmen */
+#welcome-screen {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3f2fd;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 100px;
+}
+
+#username-input {
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #90caf9;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.row {
+  display: flex;
+  height: 100%;
+}
+
+/* Chattsidan */
+#chat-screen {
+  display: flex;
+  flex: 1;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#user-column {
+  width: 25%;
+  background-color: #bbdefb;
+  color: #333;
+  padding: 20px;
+  border-right: 1px solid #90caf9;
+}
+
+#user-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #1e88e5;
+  text-align: center;
+}
+
+#user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#user-list li {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #e3f2fd;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+}
+
+#user-list li span {
+  width: 10px;
+  height: 10px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Chatten */
+.chat-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #1e88e5;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#chat-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background: url('potato_unicorn-bg.png') no-repeat center center;
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+#chat-main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Meddelanden */
+.chat-box .message {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 60%;
+  font-size: 15px;
+}
+
+.chat-box .message.me {
+  align-self: flex-end;
+  background-color: #4caf50; /* Grön för egna meddelanden */
+  color: white;
+}
+
+.chat-box .message.other {
+  align-self: flex-start;
+  background-color: #90caf9; /* Ljusblå för andras meddelanden */
+  color: black;
+}
+
+/* Inputfältet */
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background-color: #bbdefb;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #90caf9;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  background-color: #4caf50; /* Grön knapp */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #66bb6a;
+}
